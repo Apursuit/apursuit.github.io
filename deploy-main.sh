@@ -17,7 +17,8 @@ npm run build:win
 # 进入项目文件夹
 cd "$push_path"
 
-git init
+# 第一次运行后，注释掉
+# git init
 
 # 添加所有更改的文件
 git add -A
