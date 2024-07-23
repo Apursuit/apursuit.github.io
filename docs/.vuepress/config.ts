@@ -30,7 +30,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       { text: '归档',link: '/archives/' },
-      { text: '收藏', link: '/pages/8d0c5d/' },
+      { text: '收藏', link: '/pages/c52ab0/' },
       
       // { text: '友链', link: '/friends/'},
       // { text: '关于', link: '/pages/a083cc/' },
