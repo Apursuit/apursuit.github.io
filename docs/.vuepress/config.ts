@@ -30,26 +30,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       { text: '归档',link: '/archives/' },
-      
-      { text: "工具", 
-        
-        link: '' ,
-        items: [
-          { text: "菜鸟工具" , link: "https://www.jyshare.com/" },
-          { text: "Zlibrary" , link: "https://zh.singlelogin.re/" },
-        ],
-      },
-
-      { text: "指南", 
-        
-        link: '' ,
-        items: [
-          { text: "入门综述" , link: "https://xp0int-team.feishu.cn/wiki/wikcnnWbXXGELt1xHkyBhvdQKrh" },
-          { text: "Hello-CTF" , link: "https://hello-ctf.com/HC_Start/" },
-          { text: "CSDIY" , link: "https://www.jyshare.com/"},
-        ],
-      },
-      
+      { text: '收藏', link: '/pages/8d0c5d/' },
       
       // { text: '友链', link: '/friends/'},
       // { text: '关于', link: '/pages/a083cc/' },
