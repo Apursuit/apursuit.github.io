@@ -145,7 +145,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       'meta',
       {
         name: 'keywords',
-        content: 'ajay',
+        content: 'ctf,web,php,编程学习,技术分享,前端博客,个人技术博客,学习,github,markdown',
       },
     ],
     // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
