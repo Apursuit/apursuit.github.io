@@ -3,9 +3,11 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-# push_addr=git@github.com:Apursuit/Apursuit.github.io.git # Git 提交地址
+# git
+push_addr=git@github.com:Apursuit/Apursuit.github.io.git # Git 提交地址
 # https
-push_addr=https://github.com/Apursuit/Apursuit.github.io.git # Git 提交地址
+# push_addr=https://github.com/Apursuit/Apursuit.github.io.git # Git 提交地址
+
 commit_info='commit'
 push_path=./ # 项目根目录
 dist_path=./docs/.vuepress/dist # 打包生成的文件夹路径
