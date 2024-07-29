@@ -5,6 +5,7 @@ import xml.etree.ElementTree as ET
 sitemap_url = 'https://the0n3.top/sitemap.xml'
 api_url = 'https://www.bing.com/indexnow'
 api_key = '24ecbc0943c8486dbf9e1cf532eb6620'
+key_location = 'https://the0n3.top/24ecbc0943c8486dbf9e1cf532eb6620.txt'
 host = 'https://the0n3.top'
 
 # 1. 下载并解析 sitemap.xml
@@ -19,6 +20,7 @@ urls = [elem.text for elem in root.findall('.//ns:loc', namespaces=namespace)]
 data = {
     'host': host,
     'key': api_key,
+    'keyLocation': key_location,  # 添加 keyLocation 字段
     'urlList': urls
 }
 
