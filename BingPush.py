@@ -25,6 +25,11 @@ data = {
 }
 
 # 4. 发送 API 请求
-response = requests.post(api_url, json=data)
+headers = {
+    'Content-Type': 'application/json; charset=utf-8',
+    'Host': 'api.indexnow.org'
+}
+
+response = requests.post(api_url, json=data,headers=headers)
 print(f"Status Code: {response.status_code}")
 print(response.text)
