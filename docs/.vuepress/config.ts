@@ -18,7 +18,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "ajay",
+      title: "Cola",
       description: '记录CTF学习过程与比赛心得，涵盖网络安全、Web方向、技术分享、编程学习以及Minecraft服务器搭建等内容',
     }
   },
@@ -84,7 +84,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: 'ajay', // 必需
+      name: 'Cola', // 必需
       link: 'https://github.com/Apursuit', // 可选的
     },
 
@@ -128,7 +128,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
-        name: 'ajay',
+        name: 'Cola',
         link: 'https://the0n3.top'
       }
     },
