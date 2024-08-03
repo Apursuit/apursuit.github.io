@@ -1,2 +1,6 @@
+# section 1
 User-agent: *
 Disallow:
+
+# section 2
+Sitemap: https://the0n3.top/sitemap.xml
