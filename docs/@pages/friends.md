@@ -5,7 +5,7 @@ permalink: /friends
 article: false
 sidebar: false
 author:
-  name: ajay
+  name: Cola
   link: https://the0n3.top
 ---
 
@@ -32,7 +32,7 @@ cardList 后面可跟随一个数字表示每行最多显示多少个，选值�
 在本页面评论区留言您的友链信息，格式：(点击代码块右上角一键复制)
 
 ```yaml
-- name: ajay # 昵称
+- name: Cola # 昵称
   desc: 阳光是你，影子是我 # 介绍
   avatar: https://the0n3.top/medias/friends/syz.png # 头像
   link: https://the0n3.top/ # 链接

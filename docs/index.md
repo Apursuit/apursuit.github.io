@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/web.png
-heroText: ajay
+heroText: Cola
 tagline: 
 # actionText: 立刻进入 →
 # actionLink: /web/

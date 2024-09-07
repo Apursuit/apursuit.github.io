@@ -84,7 +84,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: 'ajay', // 必需
+      name: 'Cola', // 必需
       link: 'https://github.com/Apursuit', // 可选的
     },
 
@@ -92,7 +92,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 觉不美观，遂弃
     // blogger: {
     //   avatar: 'https://the0n3.top/medias/friends/syz.png',
-    //   name: 'ajay',
+    //   name: 'Cola',
     //   slogan: 'ctf web 摸鱼 甩锅 缝合怪',
     // },
 
@@ -128,7 +128,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
-        name: 'ajay',
+        name: 'Cola',
         link: 'https://the0n3.top'
       }
     },
