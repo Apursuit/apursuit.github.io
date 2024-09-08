@@ -152,7 +152,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     ['meta', { name: 'google-site-verification', content: '2rTU4TJf9FGp-0dfoTNgDPqEaVmD1mMxR_aabNaQXnQ' }], // Google验证
     // 添加music.js
-    ['script', { src: '/medias/siteJS/music.js' }],
+    ['script', 
+      { 
+        src: 'https://the0n3.top/medias/siteJS/music.js' 
+      }
+    ],
     // [
     //   'script',
     //   {
