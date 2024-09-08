@@ -48,5 +48,5 @@ article: false
             <!-- 动态生成列表项 -->
     </ul>
 </div>
-    <script src="https://the0n3.top/medias/siteJS/music.js" defer></script>
+<script src="https://the0n3.top/medias/siteJS/music.js" type="text/javascript" defer></script>
 </body>
