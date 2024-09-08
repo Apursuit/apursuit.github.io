@@ -36,14 +36,7 @@ article: false
 </style>
 <h2>音乐</h2>
 <h3 id="currentTrack">当前播放：</h3>
-<!-- 音频播放器 -->
-<audio id="audioPlayer" controls>
-    <source id="audioSource" src="" type="audio/mpeg">
-    您的浏览器不支持音频播放。
-</audio>
-
-<div class="mp3-container">
-    <ul class="mp3-list">
-            <!-- 动态生成列表项 -->
-    </ul>
-</div>
+    <audio id="audioPlayer" controls>
+        <source id="audioSource" src="" type="audio/mp3">
+    </audio>
+    <ul class="mp3-list"></ul>

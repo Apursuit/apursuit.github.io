@@ -1,3 +1,4 @@
+// 声明变量
 const audioPlayer = document.getElementById('audioPlayer');
 const audioSource = document.getElementById('audioSource');
 const currentTrackDisplay = document.getElementById('currentTrack');
@@ -68,21 +69,21 @@ const tracks = [
     { title: "黄昏", url: "https://raw.githubusercontent.com/Apursuit/songList/main/黄昏.mp3" }
 ];
 
-    // 打乱数组顺序的函数
+// 打乱数组顺序的函数
 function shuffle(array) {
-let currentIndex = array.length, randomIndex;
+    let currentIndex = array.length, randomIndex;
 
-// 当还有元素可以打乱时
-while (currentIndex !== 0) {
-    // 随机选择一个元素
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
+    // 当还有元素可以打乱时
+    while (currentIndex !== 0) {
+        // 随机选择一个元素
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
 
-    // 交换当前元素与随机选择的元素
-    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-}
+        // 交换当前元素与随机选择的元素
+        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
 
-return array;
+    return array;
 }
 
 // 打乱歌曲列表
@@ -90,61 +91,61 @@ const shuffledTracks = shuffle([...tracks]);
 
 // 添加歌曲到页面的函数
 function displayTracks() {
-const listElement = document.querySelector('.mp3-list');
-listElement.innerHTML = ''; // 清空现有列表
+    const listElement = document.querySelector('.mp3-list');
+    listElement.innerHTML = ''; // 清空现有列表
 
-shuffledTracks.forEach(track => {
-    const listItem = document.createElement('li');
-    listItem.textContent = track.title;
-    listItem.dataset.file = track.url;
-    listItem.className = 'song-li';
-    listItem.onclick = () => playMusic(track.url);
-    listElement.appendChild(listItem);
-});
+    shuffledTracks.forEach(track => {
+        const listItem = document.createElement('li');
+        listItem.textContent = track.title;
+        listItem.dataset.file = track.url;
+        listItem.className = 'song-li';
+        listItem.onclick = () => playMusic(track.url);
+        listElement.appendChild(listItem);
+    });
 }
 
 // 页面加载时显示歌曲列表
 document.addEventListener('DOMContentLoaded', function() {
-displayTracks();
+    displayTracks();
 });
 
-var audioPlayer = document.getElementById('audioPlayer');
-var audioSource = document.getElementById('audioSource');
-var currentTrackIndex = -1;
-var tracks = shuffledTracks; // 使用打乱后的列表
-
+// 播放音乐的函数
 function playMusic(url) {
-audioSource.src = url;
-audioPlayer.load();
-audioPlayer.play();
-currentTrackIndex = tracks.findIndex(track => track.url === url);
-
-// 更新当前播放的歌曲名
-document.querySelector('h3').innerText = `当前播放：${tracks[currentTrackIndex].title}`;
-}
-
-function playPause() {
-if (audioPlayer.paused) {
+    audioSource.src = url;
+    audioPlayer.load();
     audioPlayer.play();
-} else {
-    audioPlayer.pause();
-}
+    currentTrackIndex = shuffledTracks.findIndex(track => track.url === url);
+
+    // 更新当前播放的歌曲名
+    document.querySelector('h3').innerText = `当前播放：${shuffledTracks[currentTrackIndex].title}`;
 }
 
+// 播放/暂停的函数
+function playPause() {
+    if (audioPlayer.paused) {
+        audioPlayer.play();
+    } else {
+        audioPlayer.pause();
+    }
+}
+
+// 上一首歌的函数
 function previousTrack() {
-if (tracks.length > 0) {
-    currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
-    playMusic(tracks[currentTrackIndex].url);
-}
+    if (shuffledTracks.length > 0) {
+        currentTrackIndex = (currentTrackIndex - 1 + shuffledTracks.length) % shuffledTracks.length;
+        playMusic(shuffledTracks[currentTrackIndex].url);
+    }
 }
 
+// 下一首歌的函数
 function nextTrack() {
-if (tracks.length > 0) {
-    currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
-    playMusic(tracks[currentTrackIndex].url);
-}
+    if (shuffledTracks.length > 0) {
+        currentTrackIndex = (currentTrackIndex + 1) % shuffledTracks.length;
+        playMusic(shuffledTracks[currentTrackIndex].url);
+    }
 }
 
+// 播放结束后自动播放下一首歌
 audioPlayer.addEventListener('ended', function() {
-nextTrack();
+    nextTrack();
 });
