@@ -1,3 +1,10 @@
+---
+title: 音乐
+date: 2024-9-8 13:28:01
+permalink: /music/
+article: false
+---
+
 <style>
 .mp3-list {
     padding: 0;
