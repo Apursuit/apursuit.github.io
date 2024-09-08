@@ -40,3 +40,5 @@ article: false
     <source id="audioSource" src="" type="audio/mp3">
 </audio>
 <ul class="mp3-list"></ul>
+
+> 如果没有显示歌单，请尝试刷新页面
