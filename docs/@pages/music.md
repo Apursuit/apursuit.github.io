@@ -43,7 +43,7 @@ article: false
         您的浏览器不支持音频播放。
     </audio>
 
-<div class="content">
+<div class="mp3-container">
     <ul class="mp3-list">
             <!-- 动态生成列表项 -->
     </ul>
