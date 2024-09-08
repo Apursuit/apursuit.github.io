@@ -35,6 +35,7 @@ article: false
 }
 </style>
 <h3 id="currentTrack">当前播放：</h3>
+<br>
 <audio id="audioPlayer" controls>
     <source id="audioSource" src="" type="audio/mp3">
 </audio>
