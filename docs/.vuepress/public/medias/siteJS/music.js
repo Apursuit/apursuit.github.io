@@ -1,3 +1,10 @@
+// 自动刷新页面一次的逻辑
+if (!sessionStorage.getItem('hasRefreshed')) {
+    // 如果页面是第一次加载
+    sessionStorage.setItem('hasRefreshed', 'true'); // 设置标记
+    location.reload(); // 刷新页面
+}
+
 // 声明变量
 const audioPlayer = document.getElementById('audioPlayer');
 const audioSource = document.getElementById('audioSource');
