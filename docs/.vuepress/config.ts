@@ -154,7 +154,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 添加music.js
     ['script', 
       { 
-        src: 'https://the0n3.top/medias/siteJS/music.js' 
+        src: 'https://the0n3.top/medias/siteJS/music.js',
+        defer: true,
       }
     ],
     // [
