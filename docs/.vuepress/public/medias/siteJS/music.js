@@ -1,20 +1,19 @@
 // 获取当前页面路径
 const currentPath = window.location.pathname;
 
-// 获取引用页面
-const referrer = document.referrer;
-
 // 检查是否需要刷新页面
 if (currentPath === '/music/') {
     // 如果路径是 /music
     if (!sessionStorage.getItem('hasRefreshed')) {
         // 如果刷新标记不存在
         sessionStorage.setItem('hasRefreshed', 'true'); // 设置标记
-
-        // 等待0.1秒后再刷新页面
-        setTimeout(() => {
-            location.reload();
-        }, 100);
+        
+        // 确保页面内容加载完成后再刷新
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                location.reload();
+            }, 100); // 设置短延迟以确保页面内容加载
+        });
     }
 }
 
@@ -22,6 +21,7 @@ if (currentPath === '/music/') {
 window.addEventListener('beforeunload', () => {
     sessionStorage.removeItem('hasRefreshed');
 });
+
 
 
 // 声明变量
