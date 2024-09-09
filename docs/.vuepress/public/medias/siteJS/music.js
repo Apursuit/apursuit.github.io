@@ -1,6 +1,6 @@
-// 自动刷新页面一次的逻辑
-if (!sessionStorage.getItem('hasRefreshed')) {
-    // 如果页面是第一次加载
+// 自动刷新特定路由页面一次的逻辑
+if (!sessionStorage.getItem('hasRefreshed') && window.location.pathname === '/music/') {
+    // 如果页面是第一次加载并且当前路由是 /music
     sessionStorage.setItem('hasRefreshed', 'true'); // 设置标记
     location.reload(); // 刷新页面
 }
