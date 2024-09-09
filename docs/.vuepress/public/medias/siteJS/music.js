@@ -13,6 +13,9 @@ if (!sessionStorage.getItem('hasRefreshed') && currentPath === '/music/') {
     setTimeout(() => {
         location.reload(); // 刷新页面
     }, 2000); // 2000 毫秒 = 2 秒
+} else if (sessionStorage.getItem('hasRefreshed') && referrer && !referrer.includes(window.location.origin)) {
+    // 如果从外部网站直接访问或刷新标记已存在，不要刷新
+    sessionStorage.removeItem('hasRefreshed'); // 清除刷新标记
 }
 
 
