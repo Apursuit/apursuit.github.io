@@ -1,20 +1,16 @@
 // 获取当前页面路径
 const currentPath = window.location.pathname;
 
-// 获取当前页面的引用页面
+// 获取引用页面
 const referrer = document.referrer;
 
 // 检查是否需要刷新页面
-if (
-  !sessionStorage.getItem('hasRefreshed') && 
-  currentPath === '/music/' && 
-  (referrer === '' || new URL(referrer).origin === window.location.origin)
-) {
-    // 如果页面是第一次加载，并且路径是 /music，
-    // 并且（没有引用页面（用户直接访问）或引用页面是同一站点（从本站跳转））
+if (!sessionStorage.getItem('hasRefreshed') && currentPath === '/music/') {
+    // 如果页面是第一次加载，并且路径是 /music
     sessionStorage.setItem('hasRefreshed', 'true'); // 设置标记
     location.reload(); // 刷新页面
 }
+
 
 
 // 声明变量
