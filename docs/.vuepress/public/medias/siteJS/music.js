@@ -8,20 +8,14 @@ if (currentPath === '/music/') {
         // 如果刷新标记不存在
         sessionStorage.setItem('hasRefreshed', 'true'); // 设置标记
         
-        // 确保页面内容加载完成后再刷新
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                // 刷新页面
-                location.reload();
-            }, 100); // 设置短延迟以确保页面内容加载
-        });
+        // 刷新页面前设置标记，避免无限刷新
+        window.location.replace(window.location.href);
     }
+} else {
+    // 如果不是 /music 页面，清除刷新标记
+    sessionStorage.removeItem('hasRefreshed');
 }
 
-// 页面离开时，清除刷新标记
-window.addEventListener('beforeunload', () => {
-    sessionStorage.removeItem('hasRefreshed');
-});
 
 
 
