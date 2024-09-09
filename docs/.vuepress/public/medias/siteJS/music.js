@@ -5,11 +5,7 @@ const currentPath = window.location.pathname;
 if (currentPath === '/music/' && !sessionStorage.getItem('hasRefreshed')) {
     // 如果页面是第一次加载，并且路径是 /music
     sessionStorage.setItem('hasRefreshed', 'true'); // 设置标记
-
-    // 等待两秒后再刷新页面
-    setTimeout(() => {
-        location.reload(); // 刷新页面
-    }, 2000); // 2000 毫秒 = 2 秒
+    location.reload(); // 刷新页面
 } else if (sessionStorage.getItem('hasRefreshed')) {
     // 清除刷新标记
     sessionStorage.removeItem('hasRefreshed');
