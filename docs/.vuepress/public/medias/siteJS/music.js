@@ -11,6 +11,7 @@ if (currentPath === '/music/') {
         // 确保页面内容加载完成后再刷新
         window.addEventListener('load', () => {
             setTimeout(() => {
+                // 刷新页面
                 location.reload();
             }, 100); // 设置短延迟以确保页面内容加载
         });
@@ -21,6 +22,7 @@ if (currentPath === '/music/') {
 window.addEventListener('beforeunload', () => {
     sessionStorage.removeItem('hasRefreshed');
 });
+
 
 
 
