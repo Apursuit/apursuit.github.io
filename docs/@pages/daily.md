@@ -14,3 +14,5 @@ article: false
 | ctfshow--ssti 总结        |                      |
 | 每日一题                  |                      |
 
+
+- [CTFshow web214 时间盲注](https://the0n3.top/pages/dfa81f/)
