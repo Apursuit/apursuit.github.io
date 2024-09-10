@@ -2,6 +2,7 @@
 title: 友链
 date: 2024-5-25 14:27:01
 permalink: /friends/
+sidebar: false
 article: false
 ---
 

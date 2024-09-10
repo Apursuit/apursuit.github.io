@@ -2,6 +2,7 @@
 title: 每日一题
 date: 2024-9-10 16:57:01
 permalink: /daily/
+sidebar: false
 article: false
 ---
 
