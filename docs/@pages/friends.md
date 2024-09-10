@@ -1,5 +1,5 @@
 ---
-title: 友情链接
+title: 友链
 date: 2024-5-25 14:27:01
 permalink: /friends/
 article: false
@@ -29,7 +29,7 @@ cardList 后面可跟随一个数字表示每行最多显示多少个，选值�
 
 ```yaml
 - name: Cola # 昵称
-  desc: 阳光是你，影子是我 # 介绍
+  desc: 想当高手.png # 介绍
   avatar: https://the0n3.top/medias/friends/syz.png # 头像
   link: https://the0n3.top/ # 链接
 ```
