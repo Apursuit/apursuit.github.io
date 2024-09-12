@@ -30,7 +30,7 @@ cardList 后面可跟随一个数字表示每行最多显示多少个，选值�
 
 ```yaml
 - name: Cola # 昵称
-  desc: 想当高手.png # 介绍
+  desc: 非常非常内向的老鼠人 # 介绍
   avatar: https://the0n3.top/medias/friends/syz.png # 头像
   link: https://the0n3.top/ # 链接
 ```
