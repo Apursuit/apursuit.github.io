@@ -34,8 +34,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       { text: '歌单',link: '/music/'},
       { text: '收藏', link: '/pages/c52ab0/' },
       { text: '友链', link: '/friends/'},
-      { text: '开往', link: 'https://www.travellings.cn/go.html',}
-      // { text: '关于', link: '/pages/a083cc/' },
+      { text: '关于', link: '/about/'},
+      { text: '开往', link: 'https://www.travellings.cn/go.html',},
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
