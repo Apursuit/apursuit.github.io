@@ -156,7 +156,5 @@ function loadMusicList() {
 }
 
 // 页面加载时直接执行音乐列表加载逻辑
-document.addEventListener('DOMContentLoaded', function() {
-    loadMusicList(); 
-});
+loadMusicList();
 
