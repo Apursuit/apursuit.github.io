@@ -156,7 +156,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ['script', 
       { 
         src: 'https://the0n3.top/medias/siteJS/music.js',
-        // defer: true,
+        defer: true,
       }
     ],
     // [
