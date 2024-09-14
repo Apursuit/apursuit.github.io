@@ -3,21 +3,23 @@ const currentPath = window.location.pathname;
 
 // 检查是否需要刷新页面
 if (currentPath === '/music/') {
-    // 如果路径是 /music
     if (!sessionStorage.getItem('hasRefreshed')) {
-        // 如果刷新标记不存在
-        sessionStorage.setItem('hasRefreshed', 'true'); // 设置标记
-        
-        // 刷新页面前设置标记，避免无限刷新
+        // 如果刷新标记不存在，设置标记并刷新页面
+        sessionStorage.setItem('hasRefreshed', 'true');
         window.location.replace(window.location.href);
+    } else {
+        // 如果刷新标记已经存在，直接执行音乐列表加载逻辑
+        loadMusicList(); // 替换成你实际用来加载音乐列表的函数
     }
 } else {
     // 如果不是 /music 页面，清除刷新标记
     sessionStorage.removeItem('hasRefreshed');
 }
 
-
-
+// 用于加载音乐列表的函数
+function loadMusicList() {
+    displayTracks(); 
+}
 
 
 // 声明变量
