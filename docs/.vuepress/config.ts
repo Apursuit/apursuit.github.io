@@ -31,7 +31,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       { text: '首页', link: '/' },
       { text: '每日一题',link: '/daily/'},
       { text: '归档',link: '/archives/' },
-      { text: '歌单',link: '/music/?refresh=true'},
+      { text: '歌单',link: '/music/?refresh=true%00'},
       { text: '收藏', link: '/pages/c52ab0/' },
       { text: '友链', link: '/friends/'},
       { text: '关于', link: '/about/'},
