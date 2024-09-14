@@ -4,12 +4,24 @@ function isMusicPage() {
 }
 
 if (isMusicPage()) {
-// 检查参数
 document.addEventListener('DOMContentLoaded', function() {
-    if (window.location.search.includes('refresh=true')) {
-        window.location.reload();
+    if (window.location.pathname.includes('/music/')) {
+        if (window.location.search.includes('refresh=true')) {
+            if (!localStorage.getItem('hasRefreshed')) {
+                localStorage.setItem('hasRefreshed', 'true');
+                window.location.reload();
+            }
+        } else {
+            localStorage.removeItem('hasRefreshed');
+        }
     }
 });
+window.addEventListener('beforeunload', function() {
+    if (window.location.pathname.includes('/music/')) {
+        localStorage.removeItem('hasRefreshed');
+    }
+});
+    
 // 声明变量
 const audioPlayer = document.getElementById('audioPlayer');
 const audioSource = document.getElementById('audioSource');
