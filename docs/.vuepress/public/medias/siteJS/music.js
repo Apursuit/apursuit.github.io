@@ -1,3 +1,8 @@
+// 检查当前页面是否为 music 页面
+function isMusicPage() {
+    return window.location.pathname.includes('/music/');
+}
+if (isMusicPage()) {
 // 声明变量
 const audioPlayer = document.getElementById('audioPlayer');
 const audioSource = document.getElementById('audioSource');
@@ -153,3 +158,7 @@ function nextTrack() {
 audioPlayer.addEventListener('ended', function() {
     nextTrack();
 });
+}
+else{
+    console.log('当前页面不是 music 页面，停止执行 music.js。');
+}
