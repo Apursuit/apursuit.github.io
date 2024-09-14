@@ -92,7 +92,11 @@ const shuffledTracks = shuffle([...tracks]);
 // 添加歌曲到页面的函数
 function displayTracks() {
     const listElement = document.querySelector('.mp3-list');
-    listElement.innerHTML = ''; // 清空现有列表
+    if (!listElement) {
+        console.error('音乐列表元素未找到');
+        return;
+    }
+    listElement.innerHTML = '';
 
     shuffledTracks.forEach(track => {
         const listItem = document.createElement('li');
@@ -149,12 +153,3 @@ function nextTrack() {
 audioPlayer.addEventListener('ended', function() {
     nextTrack();
 });
-
-// 用于加载音乐列表的函数
-function loadMusicList() {
-    displayTracks(); 
-}
-
-// 页面加载时直接执行音乐列表加载逻辑
-loadMusicList();
-
