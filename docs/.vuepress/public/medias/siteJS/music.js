@@ -2,7 +2,14 @@
 function isMusicPage() {
     return window.location.pathname.includes('/music/');
 }
+
 if (isMusicPage()) {
+// 检查参数
+document.addEventListener('DOMContentLoaded', function() {
+    if (window.location.search.includes('refresh=true')) {
+        window.location.reload();
+    }
+});
 // 声明变量
 const audioPlayer = document.getElementById('audioPlayer');
 const audioSource = document.getElementById('audioSource');

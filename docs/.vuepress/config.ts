@@ -31,7 +31,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       { text: '首页', link: '/' },
       { text: '每日一题',link: '/daily/'},
       { text: '归档',link: '/archives/' },
-      { text: '歌单',link: '/music/'},
+      { text: '歌单',link: '/music/?refresh=true'},
       { text: '收藏', link: '/pages/c52ab0/' },
       { text: '友链', link: '/friends/'},
       { text: '关于', link: '/about/'},
@@ -156,7 +156,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ['script', 
       { 
         src: 'https://the0n3.top/medias/siteJS/music.js',
-        defer: true,
+        // defer: true,
       }
     ],
     // [
