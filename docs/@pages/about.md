@@ -12,4 +12,4 @@ article: false
 
 ## 关于本站
 
-挂在Github的一个静态网页，一个类似Github的简洁风格博客
+挂在Github的一个简洁风格博客
