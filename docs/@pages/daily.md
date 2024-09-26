@@ -11,7 +11,7 @@ article: false
 | 内容                      | 状态(1完成，0未完成) |
 | ------------------------- | -------------------- |
 | ctfshow--sql注入  211-253 |          1            |
-| ctfshow--ssti 总结        |                      |
+| ctfshow--ssti 总结        |          1          |
 | ctfshow--jwt              |                      |
 | 每日一题                  |                      |
 
