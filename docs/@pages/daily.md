@@ -15,10 +15,10 @@ article: false
 | ctfshow--jwt              |                      |
 | 每日一题                  |                      |
 
-
-- [BaseCTF week4 ez-php](https://the0n3.top/pages/a0e9c3/#fin-ez-php)       24/09/15
-- [极客大挑战 2019  Secret File](https://the0n3.top/pages/276200/)       24/09/14
-- [极客大挑战 2019 LoveSQL，BabySQL](https://the0n3.top/pages/7402d2/)       24/09/13
-- [HCTF 2018--WarmUp](https://the0n3.top/pages/36ca45/)      24/09/12
-- [强网杯 2019 - 随便注](https://the0n3.top/pages/a7f3bd/)      24/09/11
-- [CTFshow web214 时间盲注](https://the0n3.top/pages/dfa81f/)            24/09/10
+- [ctfshow_新手必刷_菜狗杯 部分misc](/pages/276266/)       24/09/28
+- [BaseCTF week4 ez-php](pages/a0e9c3/#fin-ez-php)       24/09/15
+- [极客大挑战 2019  Secret File](/pages/276200/)       24/09/14
+- [极客大挑战 2019 LoveSQL，BabySQL](/pages/7402d2/)       24/09/13
+- [HCTF 2018--WarmUp](/pages/36ca45/)      24/09/12
+- [强网杯 2019 - 随便注](/pages/a7f3bd/)      24/09/11
+- [CTFshow web214 时间盲注](/pages/dfa81f/)            24/09/10
