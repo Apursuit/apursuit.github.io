@@ -18,8 +18,17 @@ cardList 后面可跟随一个数字表示每行最多显示多少个，选值�
   desc: 哈哈哈(cola留)
   avatar: https://the0n3.top/medias/friends/dg.png # 可选
   link:  # 可选
-  bgColor: "#87CEEB" # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
+  bgColor: "#3EB4F4" # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
   textColor: "#6854A1" # 可选，默认var(--textColor)
+```
+
+```yaml
+- name: baozongwi
+  desc: 每天进步一点点
+  avatar: https://baozongwi.xyz/images/acvtar.jpg # 可选
+  link:  https://baozongwi.xyz/ # 可选
+  bgColor: "#3EF48D" # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
+  textColor: "#4D7DF4" # 可选，默认var(--textColor)
 ```
 
 :::
