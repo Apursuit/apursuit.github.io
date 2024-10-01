@@ -24,6 +24,7 @@ article: false
 
 ## 10月计划
 
+- js基础
 - 浏览器js调试
 - php后门函数分析学习
 - js,python原型链污染

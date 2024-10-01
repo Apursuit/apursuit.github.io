@@ -15,7 +15,7 @@ cardList 后面可跟随一个数字表示每行最多显示多少个，选值�
 
 ```yaml
 - name: 狗哥
-  desc: 哈哈哈(cola留)
+  desc:  # 留空
   avatar: https://the0n3.top/medias/friends/dg.png # 可选
   link:  # 可选
   bgColor: "#f1f5fe" # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
