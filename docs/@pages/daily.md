@@ -41,7 +41,7 @@ article: false
 
 难道这就是这副身躯的极限了吗
 
-- [buu极客大挑战](/pages/8f5e89/)       24/09/29
+- [buu极客大挑战](/pages/8f5e89/)       24/10/01
 - [ctfshow_新手必刷_菜狗杯 部分misc](/pages/276266/)       24/09/28
 - [BaseCTF week4 ez-php](pages/a0e9c3/#fin-ez-php)       24/09/15
 - [极客大挑战 2019  Secret File](/pages/276200/)       24/09/14
