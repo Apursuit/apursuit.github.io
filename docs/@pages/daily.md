@@ -37,10 +37,11 @@ article: false
 - ~~美化博客小破站前端？~~
 
 
-## 每日一题
+## 每(n)日一题
 
 难道这就是这副身躯的极限了吗
 
+- [buu 部分flask题目](/pages/969484/)        24/10/04
 - [buu极客大挑战](/pages/8f5e89/)       24/10/01
 - [ctfshow_新手必刷_菜狗杯 部分misc](/pages/276266/)       24/09/28
 - [BaseCTF week4 ez-php](pages/a0e9c3/#fin-ez-php)       24/09/15
