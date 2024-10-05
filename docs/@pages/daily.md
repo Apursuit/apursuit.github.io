@@ -26,9 +26,9 @@ article: false
 
 - js基础
 - 浏览器js调试
-- php后门函数分析学习
+- ~~php后门函数分析学习~~
 - js,python原型链污染
-- sql盲注脚本分析、学习、编写
+- ~~sql盲注脚本分析、学习、编写~~
 - python多线程学习
 - flask pin计算
 - show、buu、攻防世界flask ssti赛题
