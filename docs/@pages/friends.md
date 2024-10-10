@@ -15,7 +15,7 @@ cardList 后面可跟随一个数字表示每行最多显示多少个，选值�
 
 ```yaml
 - name: 运维开发绿皮书
-  desc: 放置运维开发笔记、搜集、摘录、实践，保持好奇心，看文需谨慎，后果很严重！"
+  desc: 放置运维开发笔记、搜集、摘录、实践，保持好奇心，看文需谨慎，后果很严重！
   avatar: https://www.geekery.cn/logo.svg
   link: https://www.geekery.cn/
   bgColor: "#fde68a26"
