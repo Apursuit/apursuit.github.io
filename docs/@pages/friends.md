@@ -20,6 +20,13 @@ cardList 后面可跟随一个数字表示每行最多显示多少个，选值�
   link:  # 可选
   bgColor: "#f1f5fe" # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
   textColor: "#6854A1" # 可选，默认var(--textColor)
+
+- name: 运维开发绿皮书
+  desc: 放置运维开发笔记、搜集、摘录、实践，保持好奇心，看文需谨慎，后果很严重！"
+  avatar: https://www.geekery.cn/logo.svg
+  link: https://www.geekery.cn/
+  bgColor: "#fde68a26"
+  textColor: "#4d7df4"
 ```
 
 :::
@@ -30,7 +37,7 @@ cardList 后面可跟随一个数字表示每行最多显示多少个，选值�
 
 ```yaml
 - name: Cola # 昵称
-  desc: 非常非常内向的老鼠人 # 介绍
-  avatar: https://the0n3.top/medias/friends/syz.png # 头像
+  desc: 非常非常内向的老鼠人 # 概述
+  avatar: https://the0n3.top/medias/friends/syz.png # logo
   link: https://the0n3.top/ # 链接
 ```
