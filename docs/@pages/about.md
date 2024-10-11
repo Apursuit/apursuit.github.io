@@ -8,8 +8,8 @@ article: false
 
 ## 关于我
 
-非常非常社恐的老鼠人
+null
 
 ## 关于本站
 
-挂在Github的一个简洁风格博客
+web思路随写
