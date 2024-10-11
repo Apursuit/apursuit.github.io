@@ -103,7 +103,7 @@ export interface VdoingThemeConfig extends NoSidebar4DefaultThemeConfig {
 
   /**
    * 默认外观模式
-   * @default 'auto'
+   * @default 'dark'
    */
   defaultMode?: 'auto' | 'light' | 'dark' | 'read';
 
