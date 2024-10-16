@@ -34,7 +34,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       { text: '歌单',link: 'https://the0n3.top/music/',target: '_blank',},
       { text: '收藏', link: '/pages/c52ab0/' },
       { text: '友链', link: '/friends/'},
-      { text: '关于', link: '/about/'},
+      // { text: '关于', link: '/about/'},
+      { text: '想法', link: '/thinking/'},
       { text: '开往', link: 'https://www.travellings.cn/go.html',},
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）

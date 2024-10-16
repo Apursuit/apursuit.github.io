@@ -8,19 +8,6 @@ article: false
 
 
 
-传送门
-
-::: cardList
-```yaml
-- name: baozongwi
-  desc: 每天进步一点点
-  avatar: https://baozongwi.xyz/images/acvtar.jpg # 可选
-  link: https://baozongwi.xyz/  # 可选
-  bgColor: "#cad8fc" # 可选，默认var(--bodyBg)。颜色值有#号时请添加单引号
-  textColor: "#4571dc" # 可选，默认var(--textColor)
-```
-:::
-
 
 ## 10月计划
 
