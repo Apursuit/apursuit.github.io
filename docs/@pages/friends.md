@@ -24,7 +24,7 @@ cardList 后面可跟随一个数字表示每行最多显示多少个，选值�
   desc: 每天进步一点点
   avatar: https://baozongwi.xyz/images/acvtar.jpg
   link: https://baozongwi.xyz/
-  bgColor: "#4d7df4"
+  bgColor: "#7197f6"
   textColor: "#000000"
 ```
 :::
