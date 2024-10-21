@@ -19,6 +19,13 @@ cardList 后面可跟随一个数字表示每行最多显示多少个，选值�
   link: https://www.geekery.cn/
   bgColor: "#fde68a26"
   textColor: "#4d7df4"
+
+- name: baozongwi
+  desc: 每天进步一点点
+  avatar: https://baozongwi.xyz/images/acvtar.jpg
+  link: https://baozongwi.xyz/
+  bgColor: "#4d7df4"
+  textColor: "#000000"
 ```
 :::
 
