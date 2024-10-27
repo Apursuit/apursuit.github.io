@@ -6,7 +6,11 @@ sidebar: false
 article: false
 ---
 
-自己的思考以及分享
+思考及分享
+
+谢谢你，我阴暗世界的小太阳。谢谢你，一直温暖着我
+
+![sun](https://the0n3.top/medias/zz-meme/sun.jpg)
 
 ## 思考
 
