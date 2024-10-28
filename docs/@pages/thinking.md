@@ -19,6 +19,10 @@ N0ne
 
 ## 分享
 
+- [回避是我的保护色吗？- Bilibili](https://www.bilibili.com/video/BV13U421o7ye/)
+
+- [回避型人格？ - Bilibili](https://www.bilibili.com/video/BV1wQ4y1R7Jr/)
+
 - [我的表达欲在减少](https://zu1k.com/posts/thinking/low-desire-of-expression/)
 
 - [你的20岁是什么状态呢？ - 千夜的回答 - 知乎](https://www.zhihu.com/question/382029543/answer/2905680892)
