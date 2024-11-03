@@ -7,10 +7,14 @@ article: false
 ---
 
 
+## TODO
+
+准备把月计划转变为周报
 
 
+
+<!-- 
 ## 10月计划
-
 - js基础
 - 浏览器js调试
 - ~~php后门函数分析学习~~
@@ -21,7 +25,7 @@ article: false
 - show、buu、攻防世界flask ssti赛题
 - flask内存马注入
 - 了解java web
-- ~~美化博客小破站前端？~~
+- ~~美化博客小破站前端？~~ -->
 
 
 ## 每(n)日一题
