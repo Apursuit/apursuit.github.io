@@ -29,7 +29,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 导航配置
     nav: [
       { text: '首页', link: '/' },
-      { text: '每日一题',link: '/daily/'},
+      { text: 'TODO',link: '/daily/'},
       { text: '归档',link: '/archives/' },
       { text: '思考', link: '/thinking/'},
       { text: '友链', link: '/friends/'},

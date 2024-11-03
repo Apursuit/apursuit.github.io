@@ -1,16 +1,21 @@
 ---
-title: 每日一题
+title: TODO
 date: 2024-9-10 16:57:01
 permalink: /daily/
-sidebar: false
+sidebar: auto
 article: false
 ---
 
+[知道创宇研发技能表v3.1](https://blog.knownsec.com/Knownsec_RD_Checklist/index.html)
 
-## TODO
 
-准备把月计划转变为周报
+## 十一月的嚣张 第一周
 
+// TODO
+
+- nginx玩法
+- flask session伪造
+- xxe
 
 
 <!-- 
