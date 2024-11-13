@@ -9,7 +9,11 @@ article: false
 [知道创宇研发技能表v3.1](https://blog.knownsec.com/Knownsec_RD_Checklist/index.html)
 
 
-## 十一月的嚣张 第一周
+## 十一月 第二周
+
+不学ctf的时候过的是什么苦日子
+
+## 十一月 第一周
 
 // TODO
 

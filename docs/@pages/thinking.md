@@ -19,6 +19,8 @@ N0ne
 
 ## 分享
 
+- [一个大一学生关于水课的思考](https://www.bilibili.com/video/BV1W7SoYaEeH/)
+
 - [回避是我的保护色吗？- Bilibili](https://www.bilibili.com/video/BV13U421o7ye/)
 
 - [回避型人格？ - Bilibili](https://www.bilibili.com/video/BV1wQ4y1R7Jr/)
