@@ -273,6 +273,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           el: '#valine-vuepress-comment',
           appId: '8sJ6G7Cx71Y6wk8uc4Oa8gPO-MdYXbMMI',
           appKey: '8YrCdIYhCyYl24kayTnsl18U',
+          path: '<%- frontmatter.commentid || frontmatter.permalink %>',
           avatar: '',
           placeholder: "评论支持Markdown语法",
           recordIP: true,
