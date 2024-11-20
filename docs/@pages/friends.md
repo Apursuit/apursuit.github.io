@@ -29,13 +29,10 @@ cardList 后面可跟随一个数字表示每行最多显示多少个，选值�
 ```
 :::
 
-### 友链申请
-
-在本页面评论区留言您的友链信息，格式：(点击代码块右上角一键复制)
-
+<!-- 
 ```yaml
 - name: Cola # 昵称
   desc: 想当高手.png # 概述
   avatar: https://the0n3.top/medias/friends/syz.png # logo
   link: https://the0n3.top/ # 链接
-```
+``` -->

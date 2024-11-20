@@ -258,24 +258,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     [
-      'vuepress-plugin-comment', // 评论
-      {
-        choosen: 'gitalk',
-        options: {
-          clientID: 'b25c8e251f347504c2e5',
-          clientSecret: '400dc18afa3ea07a801dabc9dab78f003f056e7a',
-          repo: 'comments', // GitHub 仓库
-          owner: 'Apursuit', // GitHub仓库所有者
-          admin: ['Apursuit'], // 对仓库有写权限的人
-          // distractionFreeMode: true,
-          pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-          labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-          body:
-            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-        },
-      },
+      [
+        'vuepress-plugin-comment',
+        {
+          choosen: 'valine', 
+          options: {
+            el: '#valine-vuepress-comment',
+            appId: '8sJ6G7Cx71Y6wk8uc4Oa8gPO-MdYXbMMI',
+            appKey: '8YrCdIYhCyYl24kayTnsl18U'
+          }
+        }
+      ]
     ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
