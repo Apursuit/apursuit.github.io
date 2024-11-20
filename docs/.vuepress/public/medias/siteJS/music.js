@@ -160,6 +160,3 @@ audioPlayer.addEventListener('ended', function() {
     nextTrack();
 });
 }
-else{
-    console.log('当前页面不是 music 页面，停止执行 music.js。');
-}

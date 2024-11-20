@@ -153,6 +153,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     ['meta', { name: 'google-site-verification', content: '2rTU4TJf9FGp-0dfoTNgDPqEaVmD1mMxR_aabNaQXnQ' }], // Google验证
+    [
+      'script',
+      {
+        src: '//unpkg.com/valine/dist/Valine.min.js',
+      }
+    ],
     // 添加music.js
     ['script', 
       { 
@@ -160,6 +166,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         defer: true,
       }
     ],
+
     // 引入新字体
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap', rel: 'stylesheet' }],
 
