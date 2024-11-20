@@ -265,19 +265,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     [
-      [
         'vuepress-plugin-comment',
         {
           choosen: 'valine',
           // options选项中的所有参数，会传给Valine的配置
           options: {
             el: '#valine-vuepress-comment',
-            appId: 'qfjUPG41m9x43YIhwnnw4EYn-gzGzoHsz',
-            appKey: '8UJ2wMH3KGAQPb1g6TBx8M5X',
+            appId: '8sJ6G7Cx71Y6wk8uc4Oa8gPO-MdYXbMMI',
+            appKey: '8YrCdIYhCyYl24kayTnsl18U',
             // 评论框占位内容
             placeholder: "评论支持Markdown语法",
             // 评论者头像
-            avatar: "monsterid",
+            avatar: "mp",
             // 是否启用昵称框自动获取QQ昵称和QQ头像
             // enableQQ: true,
             // 访问量统计
@@ -566,8 +565,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               "2233娘-无言":"https://i0.hdslb.com/bfs/emote/fdb5870f32cfaf7949e0f88a13f6feba4a48b719.png",
             }
           }
-        }
-      ],    
+        }   
     ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
