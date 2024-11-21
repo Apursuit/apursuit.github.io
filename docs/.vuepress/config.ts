@@ -278,7 +278,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             // 评论者头像
             avatar: "mp",
             // 是否启用昵称框自动获取QQ昵称和QQ头像
-            // enableQQ: true,
+            enableQQ: true,
+            // 记录用户ip
+            recordIP: true,
             // 访问量统计
             visitor: true,
             path: '<%- frontmatter.commentid || frontmatter.permalink %>',
