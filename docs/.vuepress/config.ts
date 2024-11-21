@@ -283,6 +283,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             visitor: true,
             path: '<%- frontmatter.commentid || frontmatter.permalink %>',
             // 设置Bilibili表情包地址
+            serverURLs: 'https://8sj6g7cx.api.lncldglobal.com',
             emojiCDN: '//i0.hdslb.com/bfs/emote/',
             // 表情title和图片映射
             emojiMaps: {

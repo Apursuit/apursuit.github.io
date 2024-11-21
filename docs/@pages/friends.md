@@ -4,6 +4,7 @@ date: 2024-5-25 14:27:01
 permalink: /friends/
 sidebar: false
 article: false
+comment: false
 ---
 
 <!--
@@ -29,8 +30,8 @@ cardList 后面可跟随一个数字表示每行最多显示多少个，选值�
 ```
 :::
 
-<!-- 
-```yaml
+
+<!-- ```yaml
 - name: Cola # 昵称
   desc: 想当高手.png # 概述
   avatar: https://the0n3.top/medias/friends/syz.png # logo
