@@ -19,7 +19,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     '/': {
       lang: 'zh-CN',
       title: "Cola",
-      description: '记录CTF学习过程与比赛心得，涵盖网络安全、Web方向、技术分享、编程学习以及Minecraft服务器搭建等内容',
+      description: 'CTF学习过程记录、随写、分享',
     }
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
