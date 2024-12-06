@@ -35,8 +35,3 @@ cd -
 
 # 删除临时文件夹
 rm -rf "$dist_path"
-
-# 查看流程结果
-echo "Press [Enter] to exit (or wait 5 seconds)..."
-read -r -t 5 || echo "Timed out, exiting..."
-sleep 10
