@@ -27,6 +27,13 @@ cardList 后面可跟随一个数字表示每行最多显示多少个，选值�
   link: https://baozongwi.xyz/
   bgColor: "#9dd1ff"
   textColor: "#000000"
+
+
+- name: 秋雨样
+  desc: 想玩电脑awa
+  link: https://amqyy.cn/
+  avatar: https://article.biliimg.com/bfs/article/b4144522e96608adb59936edcda4bb4a290349942.png
+
 ```
 :::
 
