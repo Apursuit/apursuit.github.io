@@ -1,20 +1,21 @@
-// 检查当前页面是否为 music 页面
 function isMusicPage() {
     return window.location.pathname.includes('/music/');
 }
 
 if (isMusicPage()) {
-// 声明变量
-const audioPlayer = document.getElementById('audioPlayer');
-const audioSource = document.getElementById('audioSource');
-const currentTrackDisplay = document.getElementById('currentTrack');
-let currentTrackIndex = -1;
+    // 声明变量
+    const audioPlayer = document.getElementById('audioPlayer');
+    const audioSource = document.getElementById('audioSource');
+    const currentTrackDisplay = document.getElementById('currentTrack');
+    const singleLoopBtn = document.getElementById('singleLoopBtn');
+    let currentTrackIndex = -1;
+    let isSingleLoop = false; // 控制单曲循环状态
 
-// 定义库的前缀值
-const baseURL = "https://raw.githubusercontent.com/Apursuit/songList/main/";
+    // 定义库的前缀值
+    const baseURL = "https://raw.githubusercontent.com/Apursuit/songList/main/";
 
-// 定义音频文件的 URL 数组
-const tracks = [
+    // 定义音频文件的 URL 数组
+   const tracks = [
     { title: "Love Love Love", url: `${baseURL}lovelovelove.mp3` },
     { title: "一直很安静", url: `${baseURL}一直很安静.mp3` },
     { title: "一路向北", url: `${baseURL}一路向北.mp3` },
@@ -77,90 +78,82 @@ const tracks = [
     { title: "风衣", url: `${baseURL}风衣.mp3` },
     { title: "黄昏", url: `${baseURL}黄昏.mp3` }
 ];
+    // 添加歌曲到页面的函数
+    function displayTracks() {
+        const listElement = document.querySelector('.mp3-list');
+        if (!listElement) {
+            console.error('音乐列表元素未找到');
+            return;
+        }
+        listElement.innerHTML = '';
 
-
-// 打乱数组顺序的函数
-function shuffle(array) {
-    let currentIndex = array.length, randomIndex;
-
-    // 当还有元素可以打乱时
-    while (currentIndex !== 0) {
-        // 随机选择一个元素
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex--;
-
-        // 交换当前元素与随机选择的元素
-        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+        tracks.forEach(track => {
+            const listItem = document.createElement('li');
+            listItem.textContent = track.title;
+            listItem.dataset.file = track.url;
+            listItem.className = 'song-li';
+            listItem.onclick = () => playMusic(track.url);
+            listElement.appendChild(listItem);
+        });
     }
 
-    return array;
-}
-
-// 打乱歌曲列表
-const shuffledTracks = shuffle([...tracks]);
-
-// 添加歌曲到页面的函数
-function displayTracks() {
-    const listElement = document.querySelector('.mp3-list');
-    if (!listElement) {
-        console.error('音乐列表元素未找到');
-        return;
-    }
-    listElement.innerHTML = '';
-
-    shuffledTracks.forEach(track => {
-        const listItem = document.createElement('li');
-        listItem.textContent = track.title;
-        listItem.dataset.file = track.url;
-        listItem.className = 'song-li';
-        listItem.onclick = () => playMusic(track.url);
-        listElement.appendChild(listItem);
+    // 页面加载时显示歌曲列表
+    document.addEventListener('DOMContentLoaded', function() {
+        displayTracks();
     });
-}
 
-// 页面加载时显示歌曲列表
-document.addEventListener('DOMContentLoaded', function() {
-    displayTracks();
-});
-
-// 播放音乐的函数
-function playMusic(url) {
-    audioSource.src = url;
-    audioPlayer.load();
-    audioPlayer.play();
-    currentTrackIndex = shuffledTracks.findIndex(track => track.url === url);
-
-    // 更新当前播放的歌曲名
-    document.querySelector('h3').innerText = `当前播放：${shuffledTracks[currentTrackIndex].title}`;
-}
-
-// 播放/暂停的函数
-function playPause() {
-    if (audioPlayer.paused) {
+    // 播放音乐的函数
+    function playMusic(url) {
+        audioSource.src = url;
+        audioPlayer.load();
         audioPlayer.play();
-    } else {
-        audioPlayer.pause();
-    }
-}
+        currentTrackIndex = tracks.findIndex(track => track.url === url);
 
-// 上一首歌的函数
-function previousTrack() {
-    if (shuffledTracks.length > 0) {
-        currentTrackIndex = (currentTrackIndex - 1 + shuffledTracks.length) % shuffledTracks.length;
-        playMusic(shuffledTracks[currentTrackIndex].url);
+        // 更新当前播放的歌曲名
+        currentTrackDisplay.innerText = `当前播放：${tracks[currentTrackIndex].title}`;
     }
-}
 
-// 下一首歌的函数
-function nextTrack() {
-    if (shuffledTracks.length > 0) {
-        currentTrackIndex = (currentTrackIndex + 1) % shuffledTracks.length;
-        playMusic(shuffledTracks[currentTrackIndex].url);
+    // 播放/暂停的函数
+    function playPause() {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+        } else {
+            audioPlayer.pause();
+        }
     }
-}
 
-// 播放结束后自动播放下一首歌
-audioPlayer.addEventListener('ended', function() {
-    nextTrack();
-});
+    // 上一首歌的函数
+    function previousTrack() {
+        if (tracks.length > 0) {
+            currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
+            playMusic(tracks[currentTrackIndex].url);
+        }
+    }
+
+    // 下一首歌的函数
+    function nextTrack() {
+        if (tracks.length > 0) {
+            currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
+            playMusic(tracks[currentTrackIndex].url);
+        }
+    }
+
+    // 单曲循环功能
+    function toggleSingleLoop() {
+        isSingleLoop = !isSingleLoop;
+        singleLoopBtn.classList.toggle('active', isSingleLoop);
+
+        // 切换 audio 的 loop 属性
+        audioPlayer.loop = isSingleLoop;
+    }
+
+    // 播放结束后自动播放下一首歌
+    audioPlayer.addEventListener('ended', function() {
+        if (!isSingleLoop) {
+            nextTrack();
+        }
+    });
+
+    // 点击单曲循环按钮
+    singleLoopBtn.addEventListener('click', toggleSingleLoop);
 }
